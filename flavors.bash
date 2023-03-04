@@ -93,7 +93,7 @@ then
       echo "You need root access to install packages"
       exit 1
     fi
-else
+elif 
     echo "Installing on Ubuntu"
     if [ $USER == root ]
     then
@@ -174,4 +174,87 @@ else
       echo "You need root access to install packages"
       exit 1
     fi
+elif
+    echo "Installing on Ubuntu"
+    if [ $USER == root ]
+    then
+      apk add wget -y
+      if [ $? -eq 0 ]
+      then
+      echo "Installation successfully completed"
+      else
+      echo "Installation failed"
+      fi
+
+      apk add net-tools -y
+      if [ $? -eq 0 ]
+      then
+      echo "Installation successfully completed"
+      else
+      echo "Installation failed"
+      fi
+
+      apk add sysstat -y
+      if [ $? -eq 0 ]
+      then
+      echo "Installation successfully completed"
+      else
+      echo "Installation failed"
+      fi
+
+      apk add finger -y
+      if [ $? -eq 0 ]
+      then
+      echo "Installation successfully completed"
+      else
+      echo "Installation failed"
+      fi
+
+      apk add gcc -y
+      if [ $? -eq 0 ]
+      then
+      echo "Installation successfully completed"
+      else
+      echo "Installation failed"
+      fi
+
+      apk add make -y
+      if [ $? -eq 0 ]
+      then
+      echo "Installation successfully completed"
+      else
+      echo "Installation failed"
+      fi
+
+      apk add python3 -y
+      if [ $? -eq 0 ]
+      then
+      echo "Installation successfully completed"
+      else
+      echo "Installation failed"
+      fi
+
+      apk add epel-release -y
+      if [ $? -eq 0 ]
+      then
+      echo "Installation successfully completed"
+      else
+      echo "Installation failed"
+      fi
+
+      apk add git -y
+      if [ $? -eq 0 ]
+      then
+      echo "Installation successfully completed"
+      else
+      echo "Installation failed"
+      fi
+
+    else
+      echo "You need root access to install packages"
+      exit 1
+    fi
+
+  else
+  echo "The OS does not exist"  	  
 fi
