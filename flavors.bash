@@ -97,7 +97,7 @@ else
     echo "Installing on Ubuntu"
     if [ $USER == root ]
     then
-      apt get wget -y
+      apt install wget -y
       if [ $? -eq 0 ]
       then
       echo "Installation successfully completed"
@@ -105,7 +105,7 @@ else
       echo "Installation failed"
       fi
 
-      apt get net-tools -y
+      apt install net-tools -y
       if [ $? -eq 0 ]
       then
       echo "Installation successfully completed"
@@ -113,7 +113,7 @@ else
       echo "Installation failed"
       fi
 
-      apt get sysstat -y
+      apt install sysstat -y
       if [ $? -eq 0 ]
       then
       echo "Installation successfully completed"
@@ -121,7 +121,7 @@ else
       echo "Installation failed"
       fi
 
-      apt get finger -y
+      apt install finger -y
       if [ $? -eq 0 ]
       then
       echo "Installation successfully completed"
@@ -129,7 +129,7 @@ else
       echo "Installation failed"
       fi
 
-      apt get gcc -y
+      apt install gcc -y
       if [ $? -eq 0 ]
       then
       echo "Installation successfully completed"
@@ -137,7 +137,7 @@ else
       echo "Installation failed"
       fi
 
-      apt get make -y
+      apt install make -y
       if [ $? -eq 0 ]
       then
       echo "Installation successfully completed"
@@ -145,7 +145,7 @@ else
       echo "Installation failed"
       fi
 
-      apt get python3 -y
+      apt install python3 -y
       if [ $? -eq 0 ]
       then
       echo "Installation successfully completed"
@@ -153,7 +153,7 @@ else
       echo "Installation failed"
       fi
 
-      apt get epel-release -y
+      apt install epel-release -y
       if [ $? -eq 0 ]
       then
       echo "Installation successfully completed"
@@ -161,7 +161,7 @@ else
       echo "Installation failed"
       fi
 
-      apt get git -y
+      apt install git -y
       if [ $? -eq 0 ]
       then
       echo "Installation successfully completed"
