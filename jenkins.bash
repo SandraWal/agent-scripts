@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Autheur: Ribgoama S Walbeogo
+# Autheur: 
 
 # Date Created: 03/01/2023
 
